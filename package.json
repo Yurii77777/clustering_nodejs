@@ -1,0 +1,42 @@
+{
+  "name": "clustering_nodejs",
+  "version": "1.0.0",
+  "description": "test clustering in NodeJS",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "compile": "npm run build && npm start",
+    "dev": "nodemon -e ts --exec \"npm run build && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "tsc-version": "tsc -v",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yurii77777/clustering_nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yurii77777/clustering_nodejs/issues"
+  },
+  "homepage": "https://github.com/Yurii77777/clustering_nodejs#readme",
+  "dependencies": {
+    "@types/node": "^20.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/mongoose": "^5.10.3",
+    "@types/swagger-jsdoc": "^6.0.0",
+    "@types/swagger-ui-express": "^4.1.2",
+    "nodemon": "^2.0.7",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^5.0.4"
+  },
+  "prettier": "./.prettierrc.json"
+}
